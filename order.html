@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Cake</title>
+    <link rel="icon" href="cake.jpg">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">CakeBite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container1">
+            <h2>Customize Your Cake</h2>
+            <form id="cake-order-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-group">
+                    <label for="Cdate">When You Want Cake</label>
+                    <input type="date" class="form-control" name="Cdate" id="Cdate" min="2024-06-01">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight in kg</label>
+                    <input type="number" class="form-control" name="weight" id="weight" maxlength="3" min="0.5" max="10" step="0.5">
+                </div>
+                <div class="form-group">
+                    <label for="cake-type">Cake Type:</label>
+                    <select class="form-control" id="cake-type" required>
+                        <option value="">Select</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="red-velvet">Red Velvet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="frosting-type">Select Frosting Type</label><br>
+                    <input type="radio" id="buttercream" name="frostingType" value="Buttercream">
+                    <label for="buttercream">Buttercream</label><br>
+                    <input type="radio" id="chocolateGanache" name="frostingType" value="Chocolate Ganache">
+                    <label for="chocolateGanache">Chocolate Ganache</label><br>
+                    <input type="radio" id="whippedCream" name="frostingType" value="Whipped Cream">
+                    <label for="whippedCream">Whipped Cream</label>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="toppings">Select Toppings</label><br>
+                    <input type="checkbox" id="sprinkles" name="toppings" value="Sprinkles">
+                    <label for="sprinkles">Sprinkles</label><br>
+                    <input type="checkbox" id="chocolate-chips" name="toppings" value="Chocolate Chips">
+                    <label for="chocolate-chips">Chocolate Chips</label><br>
+                    <input type="checkbox" id="fruit" name="toppings" value="Fruit">
+                    <label for="fruit">Fruit</label><br>
+                    <input type="checkbox" id="nuts" name="toppings" value="Nuts">
+                    <label for="nuts">Nuts</label>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload Photo if any..</label>
+                    <input type="file" class="form-control" id="file" name="file">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message on Cake</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Place Order</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Cake Shop. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

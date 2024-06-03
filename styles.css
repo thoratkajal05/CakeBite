@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?cake'); /* Background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.container1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    flex: 1;
+    
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d9534f; /* A shade of red for the main title */
+    text-shadow: 2px 2px #fff;
+}
+
+h2 {
+    color: #5bc0de; /* A shade of blue for the subtitle */
+}
+.btn-primary, .btn-success {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+form {
+    margin-top: 30px;
+}
+.form-group label {
+    font-weight: bold;
+}
+textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
